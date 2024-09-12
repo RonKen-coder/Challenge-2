@@ -1,8 +1,145 @@
-body {
-    background-color: lightblue;
+* {
+    box-sizing: border-box;
 }
 
-h1 {
-    color: white;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex; /* Add Flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+section {
+    padding: 80px 20px;
+    min-height: 100vh;
+    display: flex; /* Add Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+}
+
+#about {
+    background-color: #f4f4f4;
+}
+
+.profile {
+    max-width: 600px;
+    display: flex; /* Add Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content horizontally */
     text-align: center;
 }
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#work {
+    background-color: #fff;
+}
+
+.work-gallery {
+    display: flex; /* Add Flexbox */
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Center content horizontally */
+    gap: 20px; /* Add space between items */
+}
+
+.work-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.work-gallery .large-img {
+    width: 300px;
+    height: 300px;
+}
+
+.work-gallery img:hover {
+    transform: scale(1.1);
+}
+
+#contact {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .work-gallery {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center content horizontally */
+    }
+
+    .work-gallery img,
+    .work-gallery .large-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+.card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+.card header {
+    padding: 20px;
+    background: #13293d;
+    color: #fff;
+  }
+  
+.card img {
+    width: 100%;
+    min-width: 400px;
+  }

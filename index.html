@@ -1,13 +1,68 @@
-In the text editor, write your HTML code. For example:
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Developer Portfolio</title>
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my first HTML page.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="profile">
+            <img src="profile.jpg" alt="Developer's Photo" class="profile-photo">
+            <h1>Developer Name</h1>
+            <p>Brief introduction about the developer, their skills, and experience.</p>
+        </div>
+    </section>
+
+    <section id="work">
+        <h2>My Work</h2>
+        <div class="work-gallery">
+            <a href="https://link-to-deployed-application.com" target="_blank">
+                <img src="app1.jpg" alt="Application 1" class="large-img">
+            </a>
+            <a href="https://link-to-deployed-application.com" target="_blank">
+                <img src="app2.jpg" alt="Application 2">
+            </a>
+            <a href="https://link-to-deployed-application.com" target="_blank">
+                <img src="app3.jpg" alt="Application 3">
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="ronalda21@hotmail.com">developer@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/developer">Developer LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Developer Name</p>
+    </footer>
+
+    <script>
+        // Scroll Script
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
