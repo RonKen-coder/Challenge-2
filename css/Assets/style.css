@@ -369,6 +369,53 @@ span{
 .contact form .btn{
     margin-top: 2rem;
 }
+.project {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.project:hover {
+    transform: translateY(-5px);
+}
+.run-buddy {
+    border-left: 5px solid #ff5733;
+    background-image: url('https://www.istockphoto.com/resources/images/FreeFileIllustration/Free-Illustration-700x860-1511828187.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* This will cover the entire element */
+    background-position: center; /* This will center the image */
+}
+.led-wall {
+    border-left: 5px solid #33b5e5;
+     background-image: url('https://www.istockphoto.com/resources/images/FreeFileIllustration/Free-Illustration-700x860-1345448765.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+.react-calc {
+    border-left: 5px solid #4caf50;
+     background-image: url('https://www.istockphoto.com/resources/images/RoyaltyFree/Illustrations-1094565322.jpg');
+    background-size: cover; 
+    background-position: center;
+}
+.pastel-puzzles {
+    border-left: 5px solid #f3a683;
+    background-image: url('https://www.istockphoto.com/resources/images/FreeFileIllustration/Free-Illustration-700x860-1345448765.jpg');
+}
+.surf-report {
+    border-left: 5px solid #0abde3;
+    background-image: url('https://www.istockphoto.com/resources/images/FreeFileIllustration/Free-Illustration-700x860-1480803011.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.project h2 {
+    margin-top: 0;
+    color: #333;
+}
+.project p {
+    color: #555;
+}
 .footer{
     position: relative;
     bottom: 0;
