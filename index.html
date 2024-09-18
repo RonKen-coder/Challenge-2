@@ -4,9 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/Assets/style.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>Portfolio Website</title>
+    <style>
+        .box {
+            background-color: lightblue;
+            min-height: 500px;
+            /* Default min-height */
+            width: 100%;
+        }
+
+        /* Media query for screens smaller than 768px */
+        @media (max-width: 768px) {
+            .box {
+                min-height: 300px;
+            }
+        }
+    </style>
 </head>
 <main>
 
